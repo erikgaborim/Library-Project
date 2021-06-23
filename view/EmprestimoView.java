@@ -13,7 +13,7 @@ public class EmprestimoView {
 		int resposta = ler.nextInt();
 		
 		while(resposta == 1) {
-			System.out.println("Habub\n");
+			System.out.println("Aqui você teria as opções para o empréstimo\n");
 			System.out.println("Aperte:"
 					+ "\n1 para empréstimo de livro"
 					+ "\n0 para sair");

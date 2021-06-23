@@ -4,7 +4,6 @@ public class ClienteAluno extends Cliente {
 	private String instituicao;
 	private String curso;
 	
-	
 	public String getInstituicao() {
 		return instituicao;
 	}

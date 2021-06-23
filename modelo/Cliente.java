@@ -1,12 +1,20 @@
 package biblioteca.modelo;
 
 public class Cliente {
+	private int codigo;
 	private String nomeCompleto;
 	private String cpf;
 	private String telefone;
 	private String email;
 	private String endereço;
 	private int prazoDevolucao = 10;
+	
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
 	
 	public String getNomeCompleto() {
 		return nomeCompleto;
