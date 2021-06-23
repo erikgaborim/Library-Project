@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Emprestimo {
 	private Date dataDeEmprestimo = new Date();
-	private Date dataDeDevolução;
+	private Date dataDeDevolucao;
 	
 	public Date getDataDeEmprestimo() {
 		return dataDeEmprestimo;
@@ -13,10 +13,10 @@ public class Emprestimo {
 		this.dataDeEmprestimo = dataDeEmprestimo;
 	}
 	
-	public Date getDataDeDevolução() {
-		return dataDeDevolução;
+	public Date getDataDeDevolucao() {
+		return dataDeDevolucao;
 	}
-	public void setDataDeDevolução(Date dataDeDevolução) {
-		this.dataDeDevolução = dataDeDevolução;
+	public void setDataDeDevolução(Date dataDeDevolucao) {
+		this.dataDeDevolucao = dataDeDevolucao;
 	}
 }

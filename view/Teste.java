@@ -84,21 +84,21 @@ public class Teste {
 		cliente.setCpf("11122334455667");
 		cliente.setTelefone("1111111111");
 		cliente.setEmail("tomjobim@gmail.com");
-		cliente.setEndereço("Rua Nascimento Silva 107, Rio de Janeiro, Rio de Janeiro");
+		cliente.setEndereco("Rua Nascimento Silva 107, Rio de Janeiro, Rio de Janeiro");
 		
 		ClienteAluno clienteAluno = new ClienteAluno();
 		clienteAluno.setNomeCompleto("Jean Baptiste Deschamps");
 		clienteAluno.setCpf("11122334455667");
 		clienteAluno.setTelefone("1111111111");
 		clienteAluno.setEmail("jean.deschamps@estudante.ifms.edu.br");
-		clienteAluno.setEndereço("Rua do Sucre 583, Campo Grande, Mato Grosso do Sul");
+		clienteAluno.setEndereco("Rua do Sucre 583, Campo Grande, Mato Grosso do Sul");
 		
 		ClienteProf clienteProf = new ClienteProf();
 		clienteProf.setNomeCompleto("Luiz Fernando Lomba");
 		clienteProf.setCpf("10987654321");
 		clienteProf.setTelefone("222222222");
 		clienteProf.setEmail("luiz.lomba@ifms.edu.br");
-		clienteProf.setEndereço("Rua Taquari 831, Campo Grande, Mato Grosso do Sul");
+		clienteProf.setEndereco("Rua Taquari 831, Campo Grande, Mato Grosso do Sul");
 		
 		
 		

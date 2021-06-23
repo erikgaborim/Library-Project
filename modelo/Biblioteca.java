@@ -173,7 +173,7 @@ public class Biblioteca {
 					cliente.setCpf(atributos[3]);
 					cliente.setEmail(atributos[4]);
 					cliente.setTelefone(atributos[5]);
-					cliente.setEndereço(atributos[6]);
+					cliente.setEndereco(atributos[6]);
 					
 					this.listaClientes.add(Integer.parseInt(atributos[0]), cliente);
 					
@@ -183,7 +183,7 @@ public class Biblioteca {
 					clienteAluno.setCpf(atributos[3]);
 					clienteAluno.setEmail(atributos[4]);
 					clienteAluno.setTelefone(atributos[5]);
-					clienteAluno.setEndereço(atributos[6]);
+					clienteAluno.setEndereco(atributos[6]);
 					clienteAluno.setInstituicao(atributos[7]);
 					clienteAluno.setCurso(atributos[8]);
 					
@@ -195,7 +195,7 @@ public class Biblioteca {
 					clienteProf.setCpf(atributos[3]);
 					clienteProf.setEmail(atributos[4]);
 					clienteProf.setTelefone(atributos[5]);
-					clienteProf.setEndereço(atributos[6]);
+					clienteProf.setEndereco(atributos[6]);
 					clienteProf.setInstituicao(atributos[7]);
 					clienteProf.setFormacao(atributos[8]);
 					

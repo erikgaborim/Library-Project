@@ -6,7 +6,7 @@ public class Cliente {
 	private String cpf;
 	private String telefone;
 	private String email;
-	private String endereço;
+	private String endereco;
 	private int prazoDevolucao = 10;
 	
 	public int getCodigo() {
@@ -44,11 +44,11 @@ public class Cliente {
 		this.email = email;
 	}
 	
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	
 	public int getPrazoDevolucao() {
