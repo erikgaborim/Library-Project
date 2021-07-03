@@ -11,6 +11,10 @@ public class Biblioteca {
 	private ArrayList<Livro> bib = new ArrayList<Livro>();
 	ArrayList<Autor> listaAutores = new ArrayList<Autor>();
 	ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
+	public ArrayList<Livro> listaLivrosUnicos = new ArrayList<Livro>(); //RETORNA UM UNICO EXEMPLAR DE UM LIVRO
+	
+	Livro novoLivro = new Livro();
+	public Livro modeloLivro = new Livro();
 	
 	public ArrayList<Livro> listaDosLivros() {
 		ArrayList<Livro> lista = new ArrayList<Livro>();
@@ -22,6 +26,7 @@ public class Biblioteca {
 	
 	public void adicionarLivro(Livro livro, int qnt) {
 		for(int i=0; i<qnt; i++) {
+			this.novoLivro = livro;
 			bib.add(livro);
 		}
 	}
@@ -32,9 +37,15 @@ public class Biblioteca {
 	
 	public ArrayList<Livro> pesquisarTitulo(String title) {
 		ArrayList<Livro> lista = new ArrayList<Livro>();
+		int cont = 0;
 		for(Livro livro : bib) {
 			if(livro.getTitulo().toUpperCase().contains(title.toUpperCase())) {
 				lista.add(livro);
+				if(cont == 0 || livro != modeloLivro) {
+					modeloLivro = livro;
+					listaLivrosUnicos.add(modeloLivro);
+				}
+				cont++;
 			}
 		}
 		return lista;
@@ -42,10 +53,15 @@ public class Biblioteca {
 	
 	public ArrayList<Livro> pesquisarAutor(String autor){
 		ArrayList<Livro> lista = new ArrayList<Livro>();
+		int cont = 0;
 		for(Livro livro : this.bib) {
 			if(livro.getAutor().getNomeCompleto().toUpperCase().contains(autor.toUpperCase())) {
 				lista.add(livro);
+				if(cont == 0) {
+					modeloLivro = livro;
+				}
 			}
+			cont++;
 		}
 		return lista;
 	}
@@ -209,5 +225,16 @@ public class Biblioteca {
 			System.out.println("Erro: " + e.getMessage());
 		}
 		return listaClientes;
+	}
+	
+	//METODO QUE RETORNA O CLIENTE CUJO INDICE E DOIS
+	public Cliente getClientes() {
+		Cliente clienteRetorno = new Cliente();
+		for(Cliente cliente : this.listaClientes) {
+			if(cliente.getCodigo() == 2) {
+				clienteRetorno = cliente;
+			}
+		}
+		return clienteRetorno;
 	}
 }
