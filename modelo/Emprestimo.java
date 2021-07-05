@@ -1,12 +1,13 @@
 package biblioteca.modelo;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Emprestimo {
-	private Date dataDeEmprestimo = new Date();
-	private Date dataDeDevolucao;
 	private Livro livro;
 	private Cliente cliente;
+	private Date dataDeEmprestimo = new Date();
+	private LocalDate dataDeDevolucao = LocalDate.now();
 	
 	public Date getDataDeEmprestimo() {
 		return dataDeEmprestimo;
@@ -15,10 +16,18 @@ public class Emprestimo {
 		this.dataDeEmprestimo = dataDeEmprestimo;
 	}
 	
-	public Date getDataDeDevolucao() {
-		return dataDeDevolucao;
+	public LocalDate getDataDeDevolucao() {
+		if(cliente instanceof ClienteAluno) {
+			return dataDeDevolucao.plusDays(30);
+		}
+		else if(cliente instanceof ClienteProf){
+			return dataDeDevolucao.plusDays(45);
+		}
+		else {
+			return dataDeDevolucao.plusDays(10);
+		}
 	}
-	public void setDataDeDevolucao(Date dataDeDevolucao) {
+	public void setDataDeDevolucao(LocalDate dataDeDevolucao) {
 		this.dataDeDevolucao = dataDeDevolucao;
 	}
 	

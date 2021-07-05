@@ -17,9 +17,4 @@ public class ClienteProf extends Cliente{
 	public void setFormacao(String formacao) {
 		this.formacao = formacao;
 	}
-	
-	@Override
-	public int getPrazoDevolucao() {
-		return super.getPrazoDevolucao() + 35;
-	}
 }

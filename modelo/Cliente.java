@@ -7,7 +7,6 @@ public class Cliente {
 	private String telefone;
 	private String email;
 	private String endereco;
-	private int prazoDevolucao = 10;
 	
 	public int getCodigo() {
 		return codigo;
@@ -49,9 +48,5 @@ public class Cliente {
 	}
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
-	}
-	
-	public int getPrazoDevolucao() {
-		return prazoDevolucao;
 	}
 }
