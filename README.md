@@ -2,7 +2,7 @@
 
 Project developed in the Programming Language classes of the Computing Course at the Instituto Federal de Mato Grosso do Sul.
 
-It consists of a library system in wich the people (customers) can borrow books. For now, the system doesn't have a graphical interface.
+It consists of a library system in wich the people (customers) can borrow books. For now, the system has no graphical interface.
 
 # Projeto Biblioteca
 
